@@ -1,0 +1,13 @@
+name: Hello Workflow
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello
+        run: echo "Hello Gaboose! GitHub Actions is working!"
